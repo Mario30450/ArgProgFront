@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+.body {
+  margin: 10px;
+}
+
+.card-img-top {
+  position: relative;
+  border-radius: 300px;
+  margin: 6%;
+}
+
+.a {
+  width: 300px;
+  height: 300px;
+  padding: 100px;
+}
+
+.card0 {
+  padding: 10px;
+}
+.cards {
+  width: 90%;
+}
+
+.banner {
+}
+
+.fotoperfil {
+  border-radius: 1000px;
+  width: 20%;
+  position: absolute;
+  margin: 10%;
+  bottom: 350px;
+}
+
+.card1 {
+  border-color: white;
+  border: 0px;
+}
+
+.card2 {
+  padding: 15px;
+}
+
+.cardname {
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.cardname2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button {
+  border-color: blue;
+  color: blue;
+  --bs-success: blue;
+  --bs-green: blue;
+}
+.imgporc {
+  padding: 100px;
+  width: 90%;
+}
+
+.imgcarrusel {
+  margin: 20px;
+  width: 100%;
+}
+
+.texto1 {
+  color: white;
+}
