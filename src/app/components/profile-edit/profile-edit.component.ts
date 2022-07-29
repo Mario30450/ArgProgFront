@@ -8,7 +8,7 @@ import { PersonaService } from 'src/app/service/persona.service';
   styleUrls: ['./profile-edit.component.css']
 })
 export class ProfileEditComponent implements OnInit {
-  persona:Persona = new Persona ('','','','','','','','','');
+  persona:Persona = new Persona ('Mario','','');
 
 
   constructor(public personaService: PersonaService) { }

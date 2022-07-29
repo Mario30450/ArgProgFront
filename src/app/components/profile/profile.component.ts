@@ -10,7 +10,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 export class ProfileComponent implements OnInit {
 
 
-  persona:Persona = new Persona ('Mario','Oros','','','','','','','');
+  persona:Persona = new Persona ('Mario','Oros','');
 
 
   constructor(public personaService: PersonaService) { }
