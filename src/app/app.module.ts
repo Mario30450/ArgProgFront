@@ -22,6 +22,7 @@ import { HeaderEditComponent } from './components/header-edit/header-edit.compon
 import { ProfileEditComponent } from './components/profile-edit/profile-edit.component';
 import { ProjectsEditComponent } from './components/projects-edit/projects-edit.component';
 import { FooterEditComponent } from './components/footer-edit/footer-edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { FooterEditComponent } from './components/footer-edit/footer-edit.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

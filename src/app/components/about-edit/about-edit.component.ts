@@ -9,15 +9,15 @@ import { PersonaService } from 'src/app/service/persona.service';
 })
 export class AboutEditComponent implements OnInit {
 
-  persona:Persona = new Persona ('','','');
+  persona:Persona = new Persona ('','','','','','','','','',);
 
 
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {
-    console.log(data);
-    this.persona=data;
+    
+    this.persona=data[0]
   });
   }
 

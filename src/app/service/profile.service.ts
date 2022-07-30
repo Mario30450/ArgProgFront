@@ -8,5 +8,5 @@ export class PorfolioService {
   http: any;
 
   constructor(private Http:HttpClientModule) { }
-  obtenerDatos(): Observable<any> {return this.http.get('https://arg-prog-back.herokuapp.com/') }
+  obtenerDatos(): Observable<any> {return this.http.get('http://localhost:8080/persona/traer') }
 }

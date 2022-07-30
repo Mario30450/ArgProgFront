@@ -10,7 +10,7 @@ import { PersonaService } from 'src/app/service/persona.service';
 export class AboutComponent implements OnInit {
   
 
-persona:Persona = new Persona ('Mario','Oros','');
+persona:Persona = new Persona ('Mario','Oros','','','','','','','',);
 
 
   constructor(public personaService: PersonaService) { }
@@ -18,7 +18,7 @@ persona:Persona = new Persona ('Mario','Oros','');
   ngOnInit(): void {
     this.personaService.getPersona().subscribe(data => {
     console.log(data);
-    this.persona=data;
+    this.persona=data[0];
   });
   }
 

@@ -1,15 +1,17 @@
-<p>profile-edit</p>
-<p>Nombre: {{ persona.nombre }} y apellido: {{ persona.apellido }}</p>
-<div class="input-group">
+<form [formGroup]="form" (ngSubmit)="onSent($event)">
+  <p>profile-edit</p>
+  <p>Nombre: {{ persona.nombre }} y apellido: {{ persona.apellido }}</p>
+  <input class="input-group" />
+  <input formControlName="nombre" />
   <div class="input-group-prepend">
     <span class="input-group-text"
-      ><button type="button" class="btn btn-secondary">Summit</button></span
+      ><button type="submit" class="btn btn-secondary">Summit</button></span
     >
   </div>
   <textarea class="form-control" aria-label="With textarea"></textarea>
-</div>
-<p>Foto perfil</p>
-<form>
+
+  <p>Foto perfil</p>
+
   <div class="form-group">
     <label for="exampleFormControlFile1">Example file input</label>
     <input type="file" class="form-control-file" id="exampleFormControlFile1" />

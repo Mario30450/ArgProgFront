@@ -9,12 +9,17 @@ import {Persona} from '../model/persona.model';
 })
 export class PersonaService {
 
-URL = 'https://localhost:8080/persona';
+URL = 'http://localhost:8080/persona';
   constructor(private http:HttpClient) { }
-public getPersona(): Observable<Persona> {
+public getPersona(): Observable<Persona[]> {
 
-return this.http.get<Persona>(this.URL + '/traer' );
+return this.http.get<Persona[]>(this.URL + '/traer' );
 
+}
+public editPersona(id:number,persona:Persona): Observable<any>
+{
+
+  return this.http.post(this.URL + '/editar/' + id,persona );
 }
 
 }
